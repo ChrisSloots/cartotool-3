@@ -1,0 +1,159 @@
+<div class="tabs">
+    <div>
+
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#kaart-info" aria-controls="kaart-info" role="tab" data-toggle="tab"><i class="fa fa-clone"></i>KAART info</a></li>
+        <li role="presentation"><a href="#visibility" aria-controls="visibility" role="tab" data-toggle="tab"><i class="fa fa-eye"></i>Visibility</a></li>
+      </ul>
+      <a class="btn delete-validation btn-red outlined uppercase rounded pull-right">
+        <i class="fa fa-trash fa-lg"></i>Delete
+      </a>
+      <label class="pull-right slide-checkbox-big checkbox-green">ZICHTBAARHEID<input type="checkbox" class="custom-checkbox slide-checkbox checkbox-green" checked></label>
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade active in" id="kaart-info">
+            <form id="form" class="form-horizontal form-validate" novalidate="novalidate">
+    <div class="table-header light-green-border">
+        <h3>Nieuw kaart</h3>
+    </div>
+    <div class="block no-margin-bottom border-bottom">
+        <div class="form-group">
+            <label for="inputName" class="control-label">Naam:</label>
+            <div class="input-fields">
+                <input type="text" class="form-control required name" id="inputName" name="inputName" placeholder="Nieuw kaart" aria-required="true">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label">Range slider</label>
+            <div class="input-fields">
+                <label class="radio-inline">
+                    <input type="radio" checked="" name="inlineRadioOptions3" id="ja" value="option1"> Ja
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptions3" id="nee" value="option2"> Nee
+                </label>
+            </div>
+            <div class="field-description"></div>
+        </div>
+        <div class="form-group">
+            <label class="control-label">Layer type</label>
+            <div class="input-fields">
+                <label class="radio-inline">
+                    <input type="radio" data-depends="#tegels-upload" name="inlineRadioOptions4" id="geojson" value="option2"> GeoJSON
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" data-depends="#styling" checked="" name="inlineRadioOptions4" id="tegels" value="option1"> Tegels
+                </label>
+            </div>
+            <div class="field-description"></div>
+        </div>
+        <div class="form-group">
+            <label for="inputName" class="control-label">Styling</label>
+            <div class="input-fields" id="styling">
+                <span class="open-media-library">DrieHoekRood</span>
+                <input type="hidden" value="DrieHoekRood"/>
+                <a class="btn btn-light-grey open-media-library-btn">Change</a>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputName" class="control-label">Tegels uploaden (Manyfold)</label>
+            <div class="input-fields" id="tegels-upload">
+                <div class="upload-image-wrapper" >
+                    <input class="upload-image valid" type="file" aria-invalid="false">
+                    <div class="uploadPreview">  </div>
+                    <div class="upload-field">
+                        <i class="fa fa-file"></i>
+                        <span class="image-title">Upload file</span>
+                        <button type="button" class="add btn btn-small btn-light-blue">Add</button>
+                        <button type="button" class="delete btn btn-small btn-red">Delete</button>
+                        <button type="button" class="change btn btn-small btn-light-grey">Change</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="table-header light-green-border">
+        <h3>Legenda</h3>
+    </div>
+    <div class="block no-margin-bottom  border-bottom">
+        <table class="image-table count-rows">
+            <thead>
+                <th>No.</th>
+                <th>Image</th>
+                <th>Beschrijving</th>
+                <th>Opmerking</th>
+                <th></th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        <img src="images/cow.jpg" alt=""/>
+                        <span href="#" class="open-thumbs-library popup">DrieHoek</span>
+                    </td>
+                    <td><span class="inline-edit">Openbaar banken</span></td>
+                    <td><span class="inline-edit">Some text</span></td>
+                    <td><a class="remove-image-row fa fa-minus"></a></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        <img src="images/cow.jpg" alt=""/>
+                        <span href="#" class="open-thumbs-library popup">VierkantRood</span>
+                    </td>
+                    <td><span class="inline-edit">Brievenbus</span></td>
+                    <td><span class="inline-edit">Teksten some text</span></td>
+                    <td><a class="remove-image-row fa fa-minus"></a></td>
+                </tr>
+            </tbody>
+        </table>
+        <a class="add-image-row fa fa-plus"></a>
+    </div>
+    <div class="table-header light-green-border">
+        <h3>Legenda</h3>
+    </div>
+    <div class="block">
+        <div class="form-group">
+            <label for="inputName" class="control-label">Headnote:</label>
+            <textarea class="form-control" id="inputText"></textarea>
+            <label for="inputName" class="control-label">Footnote:</label>
+            <textarea class="form-control" id="inputText"></textarea>
+            <div class="input-fields">
+                <button type="submit" class="btn btn-mini" href="#">Opslaan</button>
+            </div>
+        </div>
+    </div>
+
+    
+</form>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="visibility">
+            <div class="table-header light-green-border">
+                <h3>Layer-1 alphen opgebouwd uit vijf opeenvolgende groepen.</h3>
+            </div>
+            <div class="block">
+                <div class="form-group">
+                    <label for="inputName" class="control-label"></label>
+                    <div class="input-fields">
+                        <span class="multi-select-title">Zichtbaar voor:</span>
+                        <span class="multi-select-title">Niet zichtbaar voor:</span>
+                        <select multiple="multiple" class="multi-select" id="my_multi_select1" name="my_multi_select1[]">
+                            <option>Gebruiker 1</option>
+                            <option>Gebruiker 2</option>
+                            <option>Gebruiker 3</option>
+                            <option>Gebruiker 4</option>
+                            <option>Gebruiker 5</option>
+                        </select>
+                        <div class="space h40"></div>
+                        <a class="btn">Opslaan</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+      </div>
+
+    </div>
+</div>
+</div>

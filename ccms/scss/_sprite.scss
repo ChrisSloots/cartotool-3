@@ -1,0 +1,28 @@
+/*------------------------------------------------------------------*/
+/*-------------------------- MENU SPRITE ---------------------------*/
+/*------------------------------------------------------------------*/
+
+[class*=menu-icon-]:before {
+    content: '';
+    background-image: url(../img/sprite.png);
+    display: inline-block;
+    width: 29px;
+    height: 26px;
+    position: relative;
+    top: -3px;
+}
+
+.menu-icon-home:before {
+    background-position: 0 0;
+}
+
+.menu-icon-gebruikers:before {
+    background-position: -52px 0;
+}
+.menu-icon-bibliotheek:before {
+    background-position: -98px 0px;
+}
+.menu-icon-project:before {
+    background-position: -149px 0;
+}
+

@@ -1,0 +1,29 @@
+/*------------------------------------------------------------------*/
+/*----------------------------- FONTS ------------------------------*/
+/*------------------------------------------------------------------*/
+
+html {
+	height: 100%;
+}
+body {
+	font-family: Verdana, Arial, Tahoma;
+    font-size: 13px;
+	color: #323232;
+    background: #22262c;
+}
+
+
+.page-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 27px;
+    margin-bottom: 17px;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+h5 {
+    margin-bottom: 18px;
+}

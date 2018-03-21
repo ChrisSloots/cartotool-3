@@ -1,0 +1,73 @@
+.ui-dialog {
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px 0px #ccc;
+    min-width: 300px;
+    max-height: 90vh;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+    border: #000;
+    background: #000;
+    border-bottom: 1px solid #ddd;
+    border-radius: unset;
+    padding-right: .4em;
+}
+
+.ui-dialog .ui-dialog-titlebar a {
+    display: inline-block;
+    margin: .4em .2em;
+    text-align: center;
+    width: 21px;
+    font-size: 14px;
+    line-height: 21px;
+    height: 21px;
+    color: #cbcbcb;
+    border: 2px solid #cbcbcb;
+    border-radius: 50%;
+    float: right;
+    cursor: default;
+    box-sizing: content-box;
+}
+
+.ui-dialog .ui-dialog-title {
+    width: 100%;
+    /*display: none;*/
+    height: 100%;
+    display: inline-block;
+    float: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    font-size: 28px;
+    line-height: 49px;
+    padding-left: .5em;
+    z-index: 1;
+    font-size: medium;
+    font-weight: normal;
+    color: lightgray;
+}
+
+.ui-dialog-title
+{
+    color: #fff;
+}
+
+div.dialog {
+    padding: 0 !important;
+    overflow: hidden !important;
+    height: calc(100% - 50px) !important;
+}
+
+.dialog-iframe {
+    width: 100% !important;
+    height: 100% !important;
+    border: none;
+}
+
+#main-wrapper {
+    padding-top: 60px;
+}

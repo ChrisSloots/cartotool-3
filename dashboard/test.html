@@ -1,0 +1,46 @@
+<html>
+<div id="chartContainer">
+  <script src="https://www.cartotool.nl/v2/dashboard/js/d3.v4.min.js"></script>
+  <script src="https://www.cartotool.nl/v2/dashboard/js/dimple.v2.3.0.min.js"></script>
+
+  <script type="text/javascript">
+    var svg = dimple.newSvg("#chartContainer", 590, 400);
+var myData =  [
+    {"Klantsegmenten":34, "cat":"Kleine Huishoudens", "order": 1, "group":"Complex", "grp-order":"1"},
+    {"Klantsegmenten":25, "cat":"Kleine Huishoudens", "order": 1, "group":"Gemiddeld", "grp-order":"2"},
+    {"Klantsegmenten":26, "cat":"Sociale Families", "order": 2, "group":"Complex", "grp-order":"1"},
+    {"Klantsegmenten":28, "cat":"Sociale Families", "order": 2, "group":"Gemiddeld", "grp-order":"2"},
+    {"Klantsegmenten":4, "cat":"Traditionele Huurder", "order": 3, "group":"Complex", "grp-order":"1"},
+    {"Klantsegmenten":26, "cat":"Traditionele Huurder", "order": 3, "group":"Gemiddeld", "grp-order":"2"},
+    {"Klantsegmenten":16, "cat":"Behouden 50+", "order": 4, "group":"Complex", "grp-order":"1"},
+    {"Klantsegmenten":15, "cat":"Behouden 50+", "order": 4, "group":"Gemiddeld", "grp-order":"2"},
+    {"Klantsegmenten":19, "cat":"Onafhankelijke Prof.", "order": 5, "group":"Complex", "grp-order":"1"},
+    {"Klantsegmenten":6, "cat":"Onafhankelijke Prof.", "order": 5, "group":"Gemiddeld", "grp-order":"2"}
+];
+      var myChart = new dimple.chart(svg, myData);
+       myChart.defaultColors = [
+	new dimple.color("red"),
+	new dimple.color("#1f78b4"),
+	new dimple.color("#b2df8a"),
+	new dimple.color("#33a02c"),
+	new dimple.color("#fb9a99"),
+	new dimple.color("#e31a1c"),
+	new dimple.color("#fdbf6f"),
+	new dimple.color("#ff7f00"),
+	new dimple.color("#cab2d6"),
+	new dimple.color("#6a3d9a")
+      ];     
+      myChart.setBounds(60, 30, 510, 330)
+      var x = myChart.addCategoryAxis("x", ["cat", "group"]);
+      x.addGroupOrderRule("grp-order");
+      x.addOrderRule("order"); // Bepaalt de volgorde van de vars op x-as
+      myChart.addMeasureAxis("y", "Klantsegmenten");
+      ring = myChart.addSeries("group", dimple.plot.bar);
+      ring.addOrderRule("grp-order");
+      myChart.addLegend(65, 10, 510, 20, "left");
+ 
+      myChart.draw();
+
+  </script>
+</div>
+</html>

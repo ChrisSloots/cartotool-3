@@ -1,0 +1,33 @@
+<cartotool version="1">
+	<project>
+		<name>Import Test</name>
+		<map>
+			<name>Mapname</name>
+			<layers>
+				<layer type="group">
+					<name>Groupname</name>
+					<layers>
+						<layer type="layer">
+							<name>Layername 1</name>
+							<source>
+								<name>Source 1</name>
+							</source>
+							<style>
+								<name>Style 1</name>
+							</style>
+							<legend>
+								<name>Legend 1</name>
+							</legend>
+						</layer>
+						<layer type="layer">
+							<name>Layername 2</name>
+							<source>
+								<name>Source 2</name>
+							</source>
+						</layer>
+					</layers>
+				</layer>
+			</layers>
+		</map>
+	</project>
+</cartotool>

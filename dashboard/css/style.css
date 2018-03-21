@@ -1,0 +1,84 @@
+html {
+    height: 100%;
+}
+body {
+  font-family: verdana;
+  height: 100%;
+  border: 0px solid red;
+  }
+h1 {
+  font-size: 24px;
+}
+h2 {
+  font-size: 20px;
+}
+svg {
+  font: 12px;
+}
+
+.y.axis path {
+  display: none;
+}
+
+.y.axis line {
+  stroke: #fff;
+  stroke-opacity: .2;
+  shape-rendering: crispEdges;
+}
+
+.y.axis .zero line {
+  stroke: #000;
+  stroke-opacity: 1;
+}
+
+.title {
+  font-size: 48px;
+  fill: #666;
+}
+
+.birthyear,
+.age {
+  text-anchor: middle;
+}
+
+.birthyear {
+  fill: #fff;
+}
+
+rect {
+  fill-opacity: .6;
+  fill: #e377c2;
+}
+
+rect:first-child {
+  fill: #1f77b4;
+}
+
+#right {
+  border-left: 1px solid #eee;
+}
+
+#nav {
+  /*position: fixed;*/
+  padding: 1em;
+}
+
+#second {
+  position: relative;
+}
+
+form {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.svg-container {
+  /*display: inline-block;*/
+  position: relative;
+  width: 100%;
+  height: 500px;
+  padding-bottom: 100%; /* aspect ratio */
+  vertical-align: top;
+  overflow: hidden;
+}

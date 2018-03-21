@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!-- Bootstrap core CSS -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        
+
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/jquery.treegrid.js"></script>
+        <script type="text/javascript" src="js/jquery.treegrid.bootstrap3.js"></script>
+        <link rel="stylesheet" href="css/jquery.treegrid.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+      <div class="container-fluid">
+        <div class="row">
+          <div id="left" class="col-sm-3">
+            <table class="table tree-2">
+              <tr class="treegrid-1">
+                  <td>Titel kopje 1</td>
+              </tr>
+                  <tr class="treegrid-2 treegrid-parent-1">
+                          <td>Sub kopje 1</td>
+                      </tr>
+                      <tr class="treegrid-3 treegrid-parent-1">
+                          <td>Sub kopje 2</td>
+                      </tr>
+                      <tr class="treegrid-4 treegrid-parent-3">
+                          <td>Sub sub kopje 2-1</td>
+                      </tr>
+                      <tr class="treegrid-5 treegrid-parent-3">
+                          <td>Sub sub kopje 2-2</td>
+                      </tr>
+                      <tr class="treegrid-6 treegrid-parent-3">
+                          <td><a href="1.html">Dit is geel stipje</a></td>
+                      </tr>
+                      <tr class="treegrid-7 treegrid-parent-3">
+                          <td class="active-blue">Dit is rood stipje</td>
+                      </tr>
+              <tr class="treegrid-8">
+                  <td>Titel kopje 2</td>
+              </tr>        
+            </table>
+          </div>
+    <div id="right" class="col-sm-9">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1>Dit is rood stipje</h1>
+        </div>
+        <div class="col-sm-6">
+          <div id="second" class="tab-pane" role="tabpanel">
+            <!-- ============= Hier komt de diagram id="second" is gekoppeld met d3.js code =================== -->
+            <form>
+              <label><input type="radio" name="mode" value="size"> Size</label>
+              <label><input type="radio" name="mode" value="count" checked> Count</label>
+            </form>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <h2>This is the second panel</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis aut veniam modi nesciunt ea cupiditate, beatae, distinctio minus enim. Cum suscipit blanditiis dolorum, incidunt id repudiandae tenetur corrupti consequatur voluptates. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis aut veniam modi nesciunt ea cupiditate, beatae, distinctio minus enim. Cum suscipit blanditiis dolorum, incidunt id repudiandae tenetur corrupti consequatur voluptates.</p>
+        </div>
+        <div class="col-sm-12">
+          <h2>This is the first panel</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis aut veniam modi nesciunt ea cupiditate, beatae, distinctio minus enim. Cum suscipit blanditiis dolorum, incidunt id repudiandae tenetur corrupti consequatur voluptates. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis aut veniam modi nesciunt ea cupiditate, beatae, distinctio minus enim. Cum suscipit blanditiis dolorum, incidunt id repudiandae tenetur corrupti consequatur voluptates.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript">
+
+      $(document).ready(function() {
+          $('.tree').treegrid({initialState: 'collapsed'});
+          $('.tree-2').treegrid();
+      });
+  </script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
+  <script src="js/first.js"></script>
+  <script src="js/second.js"></script>
+  </body>
+</html>

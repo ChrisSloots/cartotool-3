@@ -1,0 +1,40 @@
+@media (max-width: 1024px) {
+	.breadcrumbs ul {
+		padding-left: 5px;
+	}
+	.account-nav {
+		margin-right: 5px;
+	}
+	.form-horizontal .form-group > label, .input-fields, .field-description {
+	    width: 100%;
+	}
+	label.error {
+	    position: static;
+	}
+	.mail-header .mail-title {
+	    width: 24.6%;
+	}
+
+	.mail-header .mail-value {
+	    width: 75%;
+	}
+	.table-header + .table .tr > div {
+	    white-space: normal;
+	}
+	.account-nav li a {
+	    padding: 12px 5px 6px 0px;
+	}
+	.table {
+	    font-size: 12px;
+	}
+
+	.tr > div, .th > div, .table.pool-table > div > div:nth-child(3) {
+	    padding: 6px 5px;
+	}
+	.filter-options .select {
+	    width: 190px;
+	    margin-bottom: 14px;
+	}
+}
+
+

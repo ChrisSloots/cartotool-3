@@ -1,0 +1,30 @@
+/*------------------------------------------------------------------*/
+/*--------------------------- VARIABLES ----------------------------*/
+/*------------------------------------------------------------------*/
+
+$orange: #F39769;
+$darkOrange: #fa661d;
+$blue: #00b0cb;
+$lightBlue: #00B4FF;
+$darkBlue: #64738f;
+$red: #d2232a;
+$btnRed: #ff0000;
+$lightGrey: #bcc2ce;
+$grey: #99a2af;
+$border_red: #ff0f0f;
+$lightGreen: #4aefab;
+/*------------------------------------------------------------------*/
+/*----------------------------- MIXINS -----------------------------*/
+/*------------------------------------------------------------------*/
+
+@mixin transition($val) {
+    -moz-transition: $val;
+    -webkit-transition: $val;
+    transition: $val;  
+}
+
+@mixin transform($val) {
+    -moz-transform: $val;
+    -webkit-transform: $val;
+    transform: $val;  
+}

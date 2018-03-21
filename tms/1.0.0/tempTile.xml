@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<coordinateSystem>
+		<name>Mercator</name>
+		<datum>World Geodetic 1984 (WGS84) Auto</datum>
+		<system>Mercator</system>
+		<unit>Meter</unit>
+		<majorAxis>6.378137000000000000000000e+006</majorAxis>
+		<eccentricity>0.000000000000000000000000e+000</eccentricity>
+		<centerX>0.000000000000000000000000e+000</centerX>
+		<centerY>0.000000000000000000000000e+000</centerY>
+		<centerZ>0.000000000000000000000000e+000</centerZ>
+		<rotationX>0.000000000000000000000000e+000</rotationX>
+		<rotationY>0.000000000000000000000000e+000</rotationY>
+		<rotationZ>0.000000000000000000000000e+000</rotationZ>
+		<scaleAdjustment>0.000000000000000000000000e+000</scaleAdjustment>
+		<scaleX>1.000000000000000000000000e+000</scaleX>
+		<localScaleX>3.821851414258812000000000e+001</localScaleX>
+		<scaleY>1.000000000000000000000000e+000</scaleY>
+		<localScaleY>3.821851345810397000000000e+001</localScaleY>
+		<falseEasting>0.000000000000000000000000e+000</falseEasting>
+		<localOffsetX>7.973910790709592400000000e+005</localOffsetX>
+		<falseNorthing>0.000000000000000000000000e+000</falseNorthing>
+		<localOffsetY>6.569915337501898400000000e+006</localOffsetY>
+		<centerLat>0.000000000000000000000000e+000</centerLat>
+		<centerLon>0.000000000000000000000000e+000</centerLon>
+	</coordinateSystem>
+	<image>
+		<channels>3</channels>
+		<cx>512</cx>
+		<cy>512</cy>
+	</image>
+</data>
+

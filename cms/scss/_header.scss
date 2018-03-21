@@ -1,0 +1,210 @@
+/*------------------------------------------------------------------*/
+/*---------------------------- NAV BAR -----------------------------*/
+/*------------------------------------------------------------------*/
+
+.chromeperfectpixel-overlay.ui-draggable {
+    z-index: -1 !important;
+}
+.logo {
+    float: left;
+    padding: 11px 12px 15px 18px;
+}
+
+#page-wrapper {
+    overflow: hidden;
+    z-index: 1;
+    opacity: 1;
+}
+.nav-bar {
+    background: #000;
+    box-shadow: 0 0 12.9px 0 rgba(0,0,0,0.25);
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    &:after {
+        display: table;
+        content: '';
+        clear: both;
+    }
+    a {
+        color: #99a2af;
+        text-decoration: none;
+    }
+}
+
+.breadcrumbs {
+    float: left;
+    ul {
+        padding-left: 22px;
+        margin-bottom: 9px;
+    }
+
+    li {
+        display: inline-block;
+        padding: 18px 0  3px;
+        .fa {
+            margin: 0 12px;
+        }
+
+        a {
+            font-size: 13px;
+            letter-spacing: -0.5px;
+            color: #fff;
+        }
+    }
+}
+
+.account-nav {
+    float: right;
+    margin: 0 25px 0 0;
+    border-right: 1px solid #2A2E36;
+    ul {
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    li {
+        display: inline-block;
+        border-left: 1px solid #2A2E36;
+        padding: 0 10px;
+        color: #fff;
+        &:first-child {
+            border:0;
+        }
+        a {
+            font-size: 12px;
+            font-weight: 400;
+            padding: 22px 0 11px;
+            display: inline-block;
+            vertical-align: middle;
+            color: #fff;
+        }
+        .fa {
+            font-size: 16px;
+            font-weight: 100;
+            margin-left: 3px;
+            &:before {
+                @include transition(0.3s);
+            }
+            &:hover:before {
+                color: #646C77;
+            }
+        }
+        img {
+            border-radius: 50%;
+            margin-right: 23px;
+            margin-top: 5px;
+            &+ a {
+                margin-right: 8px;
+            }
+        }
+
+    }
+}
+
+.header-contact {
+    float: left;
+    font-size: 10px;
+    letter-spacing: 0px;
+    padding: 13px 22px 13px 10px;
+    border-left: 1px solid #2a2e36;
+    margin-left: 2px;
+    border-right: 1px solid #2a2e36;
+    span {
+        color: #fff;
+        display: block;
+    }
+}
+
+
+/*------------------------------------------------------------------*/
+/*-------------------------- NAV SIDEBAR ---------------------------*/
+/*------------------------------------------------------------------*/
+
+.nav-sidebar {
+    float: left;
+    width: 160px;
+    background: #22262c;
+    margin-top: 52px;
+    margin-right: -100%;
+}
+
+.menu-sidebar {
+    padding: 0;
+    margin-top: -3px;
+    & > li.active  > a {
+        background-color: #2a2e36;
+        border-left: 3px solid #4d5d7c;
+        color: #fff;
+    }
+    li {
+        position: relative;
+        list-style: none;
+        border-left: 0;
+        &.active  > a {
+            color: #fff;
+        }
+        &.active  > .fa {
+            color: #fff;
+        }
+        &.open > ul {
+            display: block;
+        }
+        &.open > .fa {
+            @include transform(rotate(90deg));
+            color: #fff;
+        }
+        &.open > a {
+            color: #fff;
+        }
+        ul {
+            padding: 0;
+            z-index: 5;
+            display: none;
+            li {
+                padding: 0;
+                background: #111316;
+
+                a {
+                    padding-left: 42px;
+                    border-color:#060607; 
+                }
+                li a {
+                    padding-left: 55px;
+                }
+            }
+        } 
+
+        a {
+            display: block;
+            color: #4c5b79;
+            font-size: 13px;
+            line-height: 16px;
+            letter-spacing: -0.6px;
+            padding: 27px 12px 15px;
+            border-bottom: 1px solid #2a2e36;
+            text-decoration: none;
+            &:hover {
+                background: #2a2e36;
+                & +.fa {
+                    color:#fff;
+                }
+            }
+        }
+        .fa {
+            position: absolute;
+            right: 0px;
+            top: 20px;
+            width: 30px;
+            height: 30px;
+            color: #4c5b79;
+            line-height: 33px;
+            text-align: center;
+            @include transition(0.3s);
+        }
+        span {
+            vertical-align: top;
+        }
+    }
+}
+
